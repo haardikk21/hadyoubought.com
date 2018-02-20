@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
    <head>
-     <title>HadYouBought - Check how much you could've earned</title>
+      <title>HadYouBought - Check how much you could've earned</title>
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import Google Fonts-->
@@ -21,10 +21,9 @@
       <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
    </head>
    <body>
-
-   <a href="https://github.com/haardikk21/hadyoubought.com/"><img style="z-index: 5;position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+      <a href="https://github.com/haardikk21/hadyoubought.com/"><img style="z-index: 5;position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
       <div class="header">
-        <p>Warning: This website can add to Fear of Missing Out (FOMO) and lead to impulsive actions. Please invest responsibly.</p>
+         <p>Warning: This website can add to Fear of Missing Out (FOMO) and lead to impulsive actions. Please invest responsibly.</p>
       </div>
       Had you bought $100 <br>
       of 
@@ -85,6 +84,22 @@
       </div>
       <br>
       <span style="font-size: 120%;">You'd have </span><br>
+      <div id="spinner" class="hidden">
+        <br>
+         <div class="preloader-wrapper bigger active">
+            <div class="spinner-layer spinner-blue-only">
+               <div class="circle-clipper left">
+                  <div class="circle"></div>
+               </div>
+               <div class="gap-patch">
+                  <div class="circle"></div>
+               </div>
+               <div class="circle-clipper right">
+                  <div class="circle"></div>
+               </div>
+            </div>
+         </div>
+      </div>
       <div id="value"><span class="amount">$<span id="amount">0</span></span></div>
       <div class="footer">
          <p><i class="fab fa-github"></i><a href="http://github.com/haardikk21/">&nbsp;&nbsp;haardikk21</a> - All pricing data from &nbsp;<a href="http://cryptocompare.com/">http://cryptocompare.com/</a></a></p>
@@ -117,6 +132,8 @@
                  this.set('select', [date.getFullYear(), date.getMonth(), date.getDate() - 1]);
              },
               onSet: function(context) {
+                $("#value").addClass("hidden");
+                $("#spinner").removeClass("hidden");
                var coinAbv = $("#coindropdown").val();
                               
                 $.ajax({
@@ -124,6 +141,8 @@
                   url: "data/getAmount.php",
                   data: "coin=" + coinAbv + "&date=" + formatDate(context.select),
                   success: function(result) {
+                    $("#spinner").addClass("hidden");
+                    $("#value").removeClass("hidden");
                     if(!isNaN(result))
                     {
                       $("#value").html("<span class='amount'>$<span id='amount'>0</span></span>");
@@ -169,6 +188,8 @@
             });
          
             $('#coindropdown').change(function() {
+              $("#value").addClass("hidden");
+              $("#spinner").removeClass("hidden");
               var coinAbv = $("#coindropdown").val();
               var $input = $('.datepicker').pickadate()
          
@@ -180,6 +201,8 @@
                   url: "data/getAmount.php",
                   data: "coin=" + coinAbv + "&date=" + formatDate(picker.get()),
                   success: function(result) {
+                    $("#value").removeClass("hidden");
+                    $("#spinner").addClass("hidden");
                     if(!isNaN(result))
                     {
                       $("#value").html("<span class='amount'>$<span id='amount'>0</span></span>");
