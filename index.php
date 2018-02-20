@@ -58,6 +58,7 @@
             <option value="ltc">Litecoin</option>
             <option value="mtl">Metal</option>
             <option value="xmr">Monero</option>
+            <option value="xrb">Nano</option>
             <option value="xem">NEM</option>
             <option value="neo">NEO</option>
             <option value="omg">OmiseGO</option>
