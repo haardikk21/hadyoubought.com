@@ -25,67 +25,79 @@
       <div class="header">
          <p>Warning: This website can add to Fear of Missing Out (FOMO) and lead to impulsive actions. Please invest responsibly.</p>
       </div>
-      Had you bought $100 <br>
-      of 
-      <div class="input-field inline" style="padding-bottom: 2%">
-         <select id="coindropdown">
-            <option value="zrx">0x</option>
-            <option value="rep">Augur</option>
-            <option value="bat">Basic Attention Token</option>
-            <option value="bnb">Binance Coin</option>
-            <option value="btc" selected>Bitcoin</option>
-            <option value="bch">Bitcoin Cash</option>
-            <option value="btg">Bitcoin Gold</option>
-            <option value="ada">Cardano</option>
-            <option value="cvc">Civic</option>
-            <option value="dash">Dash</option>
-            <option value="dcr">Decred</option>
-            <option value="dgb">Digibyte</option>
-            <option value="doge">Dogecoin</option>
-            <option value="eos">EOS</option>
-            <option value="eth">Ethereum</option>
-            <option value="etc">Ethereum Classic</option>
-            <option value="ethos">Ethos</option>
-            <option value="fun">FunFair</option>
-            <option value="gno">Gnosis</option>
-            <option value="gnt">Golem</option>
-            <option value="icx">ICON</option>
-            <option value="icn">Iconomi</option>
-            <option value="iot">IOTA</option>
-            <option value="knc">Kyber Network</option>
-            <option value="lsk">LISK</option>
-            <option value="ltc">Litecoin</option>
-            <option value="mtl">Metal</option>
-            <option value="xmr">Monero</option>
-            <option value="xrb">Nano</option>
-            <option value="xem">NEM</option>
-            <option value="neo">NEO</option>
-            <option value="omg">OmiseGO</option>
-            <option value="pivx">PIVX</option>
-            <option value="ppt">Populous</option>
-            <option value="xrp">Ripple</option>
-            <option value="salt">SALT</option>
-            <option value="sc">SiaCoin</option>
-            <option value="snt">Status</option>
-            <option value="xlm">Stellar</option>
-            <option value="trx">TRON</option>
-            <option value="pay">TenX</option>
-            <option value="ven">VeChain</option>
-            <option value="xvg">Verge</option>
-            <option value="veri">Veritaseum</option>
-            <option value="vtc">Vertcoin</option>
-            <option value="wtc">Walton</option>
-            <option value="zec">ZCash</option>
-         </select>
+      <div class="main">
+         <span class="pretty">HadYouBought $100 <br>
+         of &nbsp;</span>
+         <span id="coinbtn">
+         <a id="coinbtndd" name="btc" class="btn btn-large modal-trigger darkbluegrey" style="font-weight: bold;" href="#coinselect">
+         <i class="material-icons right">arrow_drop_down</i>
+         Bitcoin
+         </a>
+         </span>
+         <div id="coinselect" class="modal" style="color: black;">
+            <div class="modal-content">
+               <a class="waves-effect waves-light btn darkbluegrey" name="zrx" style="font-weight: bold;">0x</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="rep" style="font-weight: bold;">Augur</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="bat" style="font-weight: bold;">Basic Attention Token</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="bnb" style="font-weight: bold;">Binance Coin</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="btc" style="font-weight: bold;">Bitcoin</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="bch" style="font-weight: bold;">Bitcoin Cash</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="btg" style="font-weight: bold;">Bitcoin Gold</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="ada" style="font-weight: bold;">Cardano</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="cvc" style="font-weight: bold;">Civic</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="dash" style="font-weight: bold;">Dash</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="dcr" style="font-weight: bold;">Decred</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="dgb" style="font-weight: bold;">Digibyte</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="doge" style="font-weight: bold;">Dogecoin</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="eos" style="font-weight: bold;">EOS</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="eth" style="font-weight: bold;">Ethereum</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="etc" style="font-weight: bold;">Ethereum Classic</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="ethos" style="font-weight: bold;">Ethos</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="fun" style="font-weight: bold;">FunFair</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="gno" style="font-weight: bold;">Gnosis</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="gnt" style="font-weight: bold;">Golem</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="icx" style="font-weight: bold;">ICON</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="icn" style="font-weight: bold;">Iconomi</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="iot" style="font-weight: bold;">IOTA</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="knc" style="font-weight: bold;">Kyber Network</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="lsk" style="font-weight: bold;">LISK</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="ltc" style="font-weight: bold;">Litecoin</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="mtl" style="font-weight: bold;">Metal</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="xmr" style="font-weight: bold;">Monero</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="xrb" style="font-weight: bold;">Nano</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="xem" style="font-weight: bold;">NEM</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="neo" style="font-weight: bold;">NEO</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="omg" style="font-weight: bold;">OmiseGO</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="pivx" style="font-weight: bold;">PIVX</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="ppt" style="font-weight: bold;">Populous</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="xrp" style="font-weight: bold;">Ripple</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="salt" style="font-weight: bold;">SALT</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="sc" style="font-weight: bold;">SiaCoin</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="snt" style="font-weight: bold;">Status</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="xlm" style="font-weight: bold;">Stellar</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="trx" style="font-weight: bold;">TRON</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="pay" style="font-weight: bold;">TenX</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="ven" style="font-weight: bold;">VeChain</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="xvg" style="font-weight: bold;">Verge</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="veri" style="font-weight: bold;">Veritaseum</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="vtc" style="font-weight: bold;">Vertcoin</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="wtc" style="font-weight: bold;">Walton</a>
+               <a class="waves-effect waves-light btn darkbluegrey" name="zec" style="font-weight: bold;">ZCash</a>
+            </div>
+         </div>
+         &nbsp;
+         <span class="pretty">on</span>
+         <div class="input-field inline" style="padding-bottom: 2%">
+            <input type="text" class="datepicker">
+         </div>
+         <br>
+         <span class="pretty">
+         <span style="font-size: 120%;">You'd have </span>
+         </span>
+         <br>
       </div>
-      on
-      <div class="input-field inline" style="padding-bottom: 2%">
-         <input type="text" class="datepicker">
-      </div>
-      <br>
-      <span style="font-size: 120%;">You'd have </span><br>
       <div id="spinner" class="hidden">
-        <br>
+         <br>
          <div class="preloader-wrapper bigger active">
             <div class="spinner-layer spinner-blue-only">
                <div class="circle-clipper left">
@@ -100,7 +112,13 @@
             </div>
          </div>
       </div>
-      <div id="value"><span class="amount">$<span id="amount">0</span></span></div>
+      <span class="pretty">
+         <div id="value">
+            <span class="amount">
+            $<span id="amount">0</span>
+            </span>
+         </div>
+      </span>
       <div class="footer">
          <p><i class="fab fa-github"></i><a href="http://github.com/haardikk21/">&nbsp;&nbsp;haardikk21</a> - All pricing data from &nbsp;<a href="http://cryptocompare.com/">http://cryptocompare.com/</a></a></p>
       </div>
@@ -124,6 +142,7 @@
          }
             $(document).ready(function() {
               $('select').material_select();
+              $(".modal").modal();
             });
             
             $('.datepicker').pickadate({
@@ -134,7 +153,7 @@
               onSet: function(context) {
                 $("#value").addClass("hidden");
                 $("#spinner").removeClass("hidden");
-               var coinAbv = $("#coindropdown").val();
+               var coinAbv = $("#coinbtndd").attr('name');
                               
                 $.ajax({
                   type: "GET",
@@ -186,11 +205,14 @@
               close: false,
               closeOnSelect: true // Close upon selecting a date,
             });
+            $(".waves-effect").on("click", function() {
          
-            $('#coindropdown').change(function() {
+              $('.modal').modal('close');
               $("#value").addClass("hidden");
               $("#spinner").removeClass("hidden");
-              var coinAbv = $("#coindropdown").val();
+              var coinAbv = $(this).attr("name");
+              $("#coinbtn").html('<a name="' + coinAbv + '" class="btn btn-large modal-trigger darkbluegrey" style="font-weight: bold;" href="#coinselect"><i class="material-icons right">arrow_drop_down</i>' + $(this).text() + '</a>');
+              
               var $input = $('.datepicker').pickadate()
          
                // Use the picker object directly.
@@ -234,6 +256,7 @@
                   }
                 })
             });
+            
       </script>
    </body>
 </html>

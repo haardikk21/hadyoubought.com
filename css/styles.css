@@ -7,6 +7,10 @@ body {
 }
 
 html {
+	font-family: 'Lato', sans-serif;
+}
+
+.pretty {
 	font-family: 'Lobster', cursive;
 }
 
@@ -22,17 +26,26 @@ html {
 
 .picker__date-display {
 	background-color:#08c;
-	font-family: 'Lato', sans-serif;
   }
 
   .picker__day--selected, .picker__day--selected:hover, .picker--focused .picker__day--selected {
 	background-color:#08c;
-	font-family: 'Lato', sans-serif;
+}
+
+.darkbluegrey {
+	background-color: #263238;
+}
+
+.btn:focus {
+	background-color: #08c;
+}
+
+.btn:hover {
+	background-color: #08c;
 }
 
 .select-wrapper ul li span {
 	color: #08c;
-	font-family: 'Lato', sans-serif;
 	font-weight: bold;
 }
 .footer {
