@@ -4,6 +4,8 @@
 
 # Changelog
 ## 20 Feb 2018
+Added preloader animation
+
 Added Nano (XRB)
 
 Open sourced the website
