@@ -5,6 +5,7 @@
 # Changelog
 ## 20 Feb 2018
 Added Nano (XRB)
+
 Open sourced the website
 
 # Contributors
