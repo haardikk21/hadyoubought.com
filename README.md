@@ -4,6 +4,10 @@
 
 # Changelog
 ## 20 Feb 2018
+Solved the website showing $100 when a future date is selected
+
+Solved datepicker bug which used to select wrong dates while changing months or years
+
 Changed coin dropdown to use a modal
 
 Changed some styling
