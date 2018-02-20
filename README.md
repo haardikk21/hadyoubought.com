@@ -5,6 +5,7 @@
 # Changelog
 ## 20 Feb 2018
 Changed coin dropdown to use a modal
+
 Changed some styling
 
 ## 19 Feb 2018
