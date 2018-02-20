@@ -151,6 +151,8 @@
                  this.set('select', [date.getFullYear(), date.getMonth(), date.getDate() - 1]);
              },
               onSet: function(context) {
+                if(context.select)
+                {
                 $("#value").addClass("hidden");
                 $("#spinner").removeClass("hidden");
                var coinAbv = $("#coinbtndd").attr('name');
@@ -192,7 +194,7 @@
                     }
                   }
                 })
-                
+                }
               },
               onClose: function() {
                   $('.datepicker').blur();
