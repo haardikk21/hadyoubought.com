@@ -214,7 +214,7 @@
               $("#value").addClass("hidden");
               $("#spinner").removeClass("hidden");
               var coinAbv = $(this).attr("name");
-              $("#coinbtndd").html('<a name="' + coinAbv + '" class="btn btn-large modal-trigger darkbluegrey" style="font-weight: bold;" href="#coinselect"><i class="material-icons right">arrow_drop_down</i>' + $(this).text() + '</a>');
+              $("#coinbtn").html('<a id="coinbtndd" name="' + coinAbv + '" class="btn btn-large modal-trigger darkbluegrey" style="font-weight: bold;" href="#coinselect"><i class="material-icons right">arrow_drop_down</i>' + $(this).text() + '</a>');
               
               var $input = $('.datepicker').pickadate()
          
