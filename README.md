@@ -3,6 +3,9 @@
 ![HadYouBought Header](https://i.imgur.com/aZBNeQq.png)
 
 # Changelog
+## 25 Feb 2018
+Added QTUM (QTUM)
+
 ## 20 Feb 2018
 Added Waves (WAVES)
 
